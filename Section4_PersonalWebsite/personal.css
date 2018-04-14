@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Black+Han+Sans|Roboto+Condensed");
+
+body {
+  background: linear-gradient(#e69cf4, #9ceff4);
+  padding-right: 5%;
+  padding-left: 5%;
+  font-family: "Roboto Condensed";
+  font-size: 22px;
+  word-wrap:break-word;
+}
+
+#title {
+  padding: 2%;
+  font-family: "Black Han Sans";
+  color: DarkSlateGray;
+  text-decoration: underline;
+}
+
+#what {
+  padding:.5%;
+}
+
+#why {
+  padding:.5%;
+}
+
+#sorry {
+  padding:.5%;
+}
+
+#consolation-prize img {
+    padding:1%;
+    width:30%;
+    height: auto;
+    float: right;
+}

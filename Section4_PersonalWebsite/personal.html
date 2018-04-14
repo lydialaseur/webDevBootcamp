@@ -1,16 +1,70 @@
 <!DOCTYPE HTML>
     <html>
         <head>
-            <title>[Your Name]'s Personal Website</title>
+          <link href="./personal.css" type="text/css" rel="stylesheet">
+            <title>Lydia's Personal Website</title>
             <script type="text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.js"> </script>
         </head>
         <body>
-            <h1>Looking pretty boring here... wish I had some CSS</h1>
-            <p>D3 Has been loaded into this page from a CDN.</p>
+            <div id="title"> </div>
+            <div id="what"> </div>
+            <div id="why"> </div>
+            <div id="sorry"> </div>
+            <div id="consolation-prize">
+              <img src = './imgs/xmas_cat.JPG'>
+            </div>
+
         </body>
         <script>
-        d3.select("body")
-        .append("p")
-        .text("Bby's first custom element created with D3")
+        // var tile = d3.select("#title")
+        //   .append("svg:svg")
+        //   .attr("width", 300)//canvasWidth)
+        //   .attr("height", 20);
+
+        d3.select("#title")
+          .append("h1")
+          .attr("align", "center")
+          .text("Welcome to Lydia's Personal Website")
+
+        d3.select("#what")
+          .append("p")
+          .text("Wait. This is a website?")
+
+        d3.select("#what")
+          .append("div")
+          .style("color", "GhostWhite")
+          .append("p")
+          .attr("align", "right")
+          .text("Uhhhh...I mean technically...I guess so...")
+
+        d3.select("#why")
+          .append("p")
+          .text("Soooo, why does this even exist?")
+
+        d3.select("#why")
+          .append("div")
+          .style("margin-left", "45%")
+          .style("color", "GhostWhite")
+          .append("p")
+          .attr("align", "right")
+          .text("I was assigned the task of creating my own personal website using html, CSS, and D3.js to customize text elements (like this one).")
+
+        d3.select("#sorry")
+          .append("p")
+          .text("Ok, so why is it so boring?")
+
+        d3.select("#sorry")
+          .append("div")
+          .style("margin-left", "45%")
+          .style("color", "GhostWhite")
+          .append("p")
+          .attr("align", "right")
+          .text("Well, my crippling indecisiveness makes me terrible at creative, open-ended assignments. You know, pobody's nerfect!")
+
+        d3.select("#sorry")
+          .append("div")
+          .style("color", "GhostWhite")
+          .attr("align", "right")
+          .text("To make up for it, here's a real cute pic of my cat.")
         </script>
     </html>
